@@ -1,0 +1,33 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "foto": "jogo1.jpg",
+      "produto": "Produto 1",
+      "descricao": "Descrição do Produto 1",
+      "preco": 1070,
+      "nome": "Street Figther"
+    },
+    {
+      "id": 2,
+      "foto": "jogo2.jpg",
+      "produto": "Produto 2",
+      "descricao": "Descrição do Produto 2",
+      "preco": 250
+    },
+    {
+      "produto": "Kuon",
+      "descricao": "Jogo Legal",
+      "preco": 66,
+      "foto": "jogo4.jpg",
+      "id": 4
+    },
+    {
+      "produto": "Red Ninja",
+      "descricao": "retrô",
+      "preco": 2000,
+      "foto": "jogo5.jpg",
+      "id": 5
+    }
+  ]
+}

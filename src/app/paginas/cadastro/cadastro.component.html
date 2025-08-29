@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <h2>{{ modoEdicao ? 'Editar Produto' : 'Cadastrar Novo Produto' }}</h2>
+  <hr>
+
+  <div *ngIf="mensagem" class="alert alert-success">{{ mensagem }}</div>
+
+  <form [formGroup]="formulario" (ngSubmit)="salvarProduto()">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="produto" class="form-label">Nome do Produto:</label>
+        <input type="text" class="form-control" id="produto" formControlName="produto">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="preco" class="form-label">Preço:</label>
+        <input type="number" class="form-control" id="preco" formControlName="preco">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="descricao" class="form-label">Descrição:</label>
+        <input type="text" class="form-control" id="descricao" formControlName="descricao">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="foto" class="form-label">Nome do Arquivo da Foto (ex: jogo3.PNG):</label>
+        <input type="text" class="form-control" id="foto" formControlName="foto">
+      </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">
+      {{ modoEdicao ? 'Salvar Alterações' : 'Cadastrar Produto' }}
+    </button>
+  </form>
+</div>
